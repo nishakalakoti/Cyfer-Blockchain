@@ -1,0 +1,63 @@
+.bg-sec-8{
+    background-image: url(/images/sec-8-bg-pic.svg);
+    background-repeat: no-repeat;
+}
+.sec-8-p{
+    font-size: 40px;
+    font-family:  "Clash Display Variable", serif !important;
+    color: #C5B0FC !important;
+}
+
+.sec-8-content-box {
+  margin-right: -300px; 
+  z-index: 2;
+  
+}
+.sec-8-right-img {
+  z-index: 1;
+}
+
+.sec-8-bootom-bg{
+    background-image: url('/images/sec-8-bg-pic.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 92%, 90% 100%, 0% 100%, 0% 10%);
+    min-width: 400px;
+    
+}
+
+.bg-sec-8-absolute{
+    position: absolute;
+    z-index: -1;
+    top: 51%;
+}
+
+
+@media (max-width: 1399.98px){
+.sec-8-content-box {
+  margin-right: -400px; 
+  z-index: 2;
+}
+}
+@media (max-width: 1199.98px){
+    .sec-8-content-box {
+        margin-right: -480px; 
+        z-index: 2;
+    }
+}
+@media (max-width: 991.98px){
+.sec-8-right-img{
+     max-width: 100%;
+     height: auto;
+}
+.sec-8-p{
+    font-size: 22px;
+    ;
+}
+}
+@media (max-width: 575.98px){
+     .sec-8-content-box {
+        margin-right: 0px; 
+        z-index: 2;
+    }
+}

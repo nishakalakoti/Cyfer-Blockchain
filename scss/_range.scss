@@ -1,0 +1,44 @@
+
+.sec-4-card{
+
+    clip-path: polygon(20% 0%,
+            100% 0%,
+            100% 70%,
+            80% 100%,
+            0% 100%,
+            0% 30% );
+        
+}
+.sec-4-card-2 {
+  clip-path: polygon(
+    0% 0%,          
+    80% 0%,         
+    100% 30%,      
+    100% 100%,     
+    20% 100%,      
+    0% 70%       
+  );
+}
+
+.sec-4-card,.sec-4-card-2{
+  background-image: url('/images/Vector.jpg');
+  width: 400px;
+}
+.bg-sec-4{
+  background-color:#1e1e1e;
+}
+
+@media (max-width: 575.98px) {
+ .sec-4-card,.sec-4-card-2{
+       max-width: 360px !important;
+       
+  }
+}
+
+@media (max-width: 767.98px) {   
+    .sec-4-card,.sec-4-card-2{
+       width: 380px;
+  }
+}
+
+

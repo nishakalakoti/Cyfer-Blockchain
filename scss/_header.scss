@@ -1,0 +1,113 @@
+button{
+  
+  background-image: url('/images/button-img.svg');
+  background-repeat: no-repeat;
+    // background: $primary;
+    
+    // clip-path: polygon(20% 0%,
+    //         100% 0%,
+    //         100% 70%,
+    //         80% 100%,
+    //         0% 100%,
+    //         0% 30% );
+  
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-toggler {
+    border-color: white;
+    background-color: $primary;
+  }
+
+  .logo-img {
+    transform: translateY(50px); 
+  }
+  .nav-link {
+    position: relative;
+    color: #fff;
+    padding: 8px 0;
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 70px;
+    background: #7B38FF; 
+    opacity: 0;
+    filter: blur(15px);
+    border-radius: 50%;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+  }
+  
+ 
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: $primary;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .navbar-collapse.show {
+    background-color: $headings-color;
+    padding: 5rem;
+    border-radius: 1rem;
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    opacity: 1; 
+  }
+  header.scrolled {
+  background-color: rgba(30, 30, 30, 0.85); // your background
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease-in-out;
+}
+nav{
+  background-color: $primary;
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+.navbar.scrolled {
+  background-color: $primary;
+  padding-top: 20px !important;
+   .logo-img {
+    transform: translateY(0); 
+  }
+  .navbar-toggler{
+    margin-top: 10px !important;
+  } 
+
+   .nav-link::before {
+    background: #ada5be; 
+  }
+  .nav-link::after {
+    background: white;
+  }
+
+}

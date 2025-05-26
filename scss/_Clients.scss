@@ -1,0 +1,51 @@
+.bg-sec-six{
+    background-image: url('/images/sec-6-bg.png');
+    background-repeat: no-repeat;
+    max-height: 215px;
+    max-width: 1090px;
+}
+.width-up{
+    width: 30%;
+}
+.width-down{
+   width: 70%;
+}
+.sec-6-bg-one{
+  position: absolute;
+  z-index: -1;  
+  top: 30%;
+  left: 0%;
+}
+.sec-6-bg-two{
+    position: absolute;
+    z-index: -1;
+    top: 72%;
+    right: 0%;
+}
+.po-re-sec-6{
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 767.98px) {
+ .lower-sec-6{
+    display: block !important;
+    padding: 10px  !important;
+  
+ }
+ .img-right-sec-6{
+    display: flex !important;
+    width: 300px;
+    height: 100%;
+    gap: 20px !important;
+    justify-self: center;
+   
+   
+
+ }
+ .width-up{
+    width: 100%;
+}
+.width-down{
+   width: 100%;
+}
+}

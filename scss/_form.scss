@@ -1,0 +1,45 @@
+.bg-fome-sec{
+    background-image: url('/images/bg-fome-sec.png');
+    background-repeat: no-repeat;
+}
+.font-size{
+    font-size: 14px;
+}
+.cut-path-fome{
+    clip-path: polygon(3% 0%,
+            100% 0%,
+            100% 60%,
+            97% 100%,
+            0% 100%,
+            0% 40% );
+}
+.cut-path-fome-textara{
+     clip-path: polygon(3% 0%,
+            100% 0%,
+            100% 88%,
+            97% 100%,
+            0% 100%,
+            0% 15% );
+}
+
+.cut-path-fome-2{
+    clip-path: polygon(5% 0%,
+            100% 0%,
+            100% 0%,
+            100% 100%,
+            0% 100%,
+            0% 40% );
+}
+.cut-path-fome-3{
+    clip-path: polygon(0% 0%,
+            100% 0%,
+            100% 60%,
+            95% 100%,
+            0% 100%,
+            0% 0% );
+}
+
+
+.bg-img-sec-7{
+    background-image: url('/images/bg-7-img.png');
+}
